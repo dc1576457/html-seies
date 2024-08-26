@@ -1,0 +1,49 @@
+.container .card .face.face1 {
+    position: relative;
+    background-color:#e7690f;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    z-index:1;
+    text-align: center;
+    transform: translateY(100px);
+    width: 200px;
+    height:150px ;
+    transition: all 3s;
+    margin-left: 5vw;
+}
+
+.container .card:hover .face.face1 {
+    background-color:rgb(240, 81, 174);
+    transform: translateY(0px);
+    width: 200px;
+    height:150px ;
+    transition: all 3s;
+}
+.container .card .face.face1 .content i {
+    width: 200px;
+    height:150px ;
+}
+.container .card .face.face2{
+    position: relative;
+    background-color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding:20px;
+    box-sizing:border-box;
+    box-shadow:0px 0px 15px rgb(0,0,0,0.8);
+    transform: translateY(-50px);
+    width: 200px;
+    height:150px ;
+    transition: all 3s;
+    margin-left: 5vw;
+}
+.container .card:hover .face.face2{
+    transform: translateY(0);
+    width: 200px;
+    height:150px ;
+    transition: all 3s;
+}
+i{padding:30%;box-sizing:border-box;font-size: 40px;color:white;}
+.main{display: inline-flex;margin-left: 20%;}
