@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:gray;
+        }
+        .box{
+            width: 1050px;
+            height: 650px;
+            background-color:#826afc;
+            margin: 100px auto;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 10px auto;
+        }
+        .a1{
+            width: 500px;
+            height: 600px;
+            
+            margin: 0px auto;
+            float: left;
+            padding: 20px;
+            box-sizing:border-box;
+        }
+        .h-1{
+            width: 500px;
+            height: 600px;
+            text-align: center;
+            font-size: 30px;
+            padding-top:200px ;
+        }
+        h1{
+            text-align: center;
+            font-size: 30px;
+        }
+        .a{
+            margin: 10px auto;
+            padding-left: 20px;
+            width: 350px;
+             
+            height: 30px;
+            border-radius:5px;
+        }
+         .b{
+            margin-left: 10px;
+            width: 150px;
+            height: 30px;
+            padding-left: 10px;
+             
+            box-sizing:border-box;
+         }
+         .b1{
+            width: 400px;
+            height: 190px;
+            background-color:#826afc;
+            margin: 0px auto;
+         }
+         .b3{
+            width: 10px;
+            height: 100px;
+            background-color:#eee;
+            float: left;
+            border-radius:5px;
+         }
+         .b4{
+            width: 380px;
+            height: 100px;
+            background-color:#826afc;
+            float: left;
+            font-size: 40px;
+            word-wrap: wrap;
+            color:white;
+         }
+         .s{
+            width: 400px;
+            height: 40px;
+            background-color:blue;
+            margin:10px auto;
+         }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="a1">
+            <div class="b1"></div>
+            <div class="b1">
+                <div class="b3"></div>
+                <div class="b4"> Responsive Registration from</div>
+            </div>
+            <div class="b1"></div>
+        </div>
+
+        <div class="a1">
+            <table>
+                <h1>Registration form</h1>
+                <tr class="int">
+                    <td>Full Name :<br/>
+                    <input type="text" name="name" classplaceholder="Enter full name" class="a"/></td>
+                </tr>
+            </table>
+            <table>
+                <tr  >
+                    <td>Email Address :<br/>
+                    <input type="text" name="email" classplaceholder="Enter Email Address" class="a"/></td>
+                </tr>
+            </table>
+            <table>
+                 <tr> 
+                    <td>&nbsp;&nbsp;Mobile No. :<br/>
+                    <input type="number" name="number" classplaceholder="Enter mobile number" class="b"/></td>
+                    <td>Birth Date :<br/>
+                    <input type="date"/></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>Gender :<br/>
+                        <input type="radio"/>Male <input type="radio"/> Female <input type="radio"/> prefer not to say
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table>
+                <tr>
+                    <td>Address :<br/>
+                        <textarea rows="4" cols="45"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table>
+                <tr>
+                    <td><select>
+                        <option> Country </option>
+                        <option>India</option>
+                        <option>japan</option>
+                        <option>USA</option>
+                    </select></td>
+                    <td><input type="text" placeholder="Enter postal code"/></td>
+                </tr>
+               
+            </table>
+            <table>
+                <tr>
+                    <td><input type="submit" value="Submit" class="s"/></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

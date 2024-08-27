@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(../images.jpeg);
+            width:980px;
+            height: 700px;
+            background-size:100% 100%;
+            padding: left 20vw;
+            animation-name: slider;
+            animation-duration: 7s;
+            animation-direction: alternate;
+            animation-iteration-count:infinite;
+           
+            
+        }
+        .box{
+            width:1300px;
+            height: 700px;       
+            background-color:rgba(255,0,0,0.6);
+            animation-name: slider;
+            animation-duration: 7s;
+            animation-direction: alternate;
+            animation-iteration-count:infinite;
+            margin:0px auto;
+            z-index: 1;
+        }
+        .child-1{
+            width: 1350px;
+            height: 700px;
+            margin: 0px auto;
+            padding-left: 10vw;
+            font-size:80px;
+            text-align: center;
+            line-height: 700px;
+            color:white;
+            animation-name: slider;
+            animation-duration: 7s;
+            animation-direction: alternate;
+            animation-iteration-count:infinite;
+            
+        }
+        @keyframes slider{
+            0%{
+                background-image:url(a.avif);
+                color:red;
+                background-color:rgb(33, 43, 234,.8);
+                color:blue;
+                background-size:cover;
+                text-shadow:250px -250px   black, 250px 250px blue ,-250px 250px red,-250px -250px purple;
+                box-shadow:0px 0px 50px black;
+                border-radius:10px;
+                border: 5px solid rgb(22, 191, 209);
+            }
+        
+        25%{
+            background-image:url(a1.avif);
+                color:red;
+                background-color:rgb(25, 164, 195,.8);
+                background-size:cover;
+                color:purple;
+                box-shadow:0px 0px 50px rgb(11, 104, 141);
+                border-radius:10px;
+                border: 5px solid rgb(245, 20, 155);
+                 
+        }
+
+        50%{
+            background-image:url(a12.png);
+                color:rgb(35, 223, 18);
+                background-color:rgb(8, 163, 11,.8);
+                background-size:cover;
+                color:rgb(14, 160, 189);
+                box-shadow:0px 0px 50px rgb(237, 9, 9);
+                border-radius:10px;
+                border: 5px solid white;
+        }
+        75%{
+            background-image:url(a3.avif);
+                color:rgb(223, 18, 18);
+                background-color:rgb(112, 13, 135,.8);
+                background-size:cover;
+                color:rgb(229, 237, 238);
+                box-shadow:0px 0px 50px rgb(241, 231, 231);
+                border-radius:10px;
+                border: 5px solid red;
+        }
+        100%{
+            background-image:url(a5.jpg);
+                color:rgb(212, 27, 157);
+                background-color:rgb(201, 185, 9,.8);
+                background-size:cover;
+                color:rgb(14, 189, 26);
+                box-shadow:0px 0px 50px rgb(199, 5, 154);
+                border-radius:10px;
+                border: 5px solid black;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="box">  
+        <div class="child-1"> Forlearnig.blogspot.com</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+SYNTAX: 
+__________________
+
+:ROOT{
+    --bg; red;
+}
+body{
+background-color:var(--bg);--> this line coll function.(green to red)
+}
+
+
+
+gradient 6 type value 
+========================>
+1.background-color: linear-gradient(red,blue,yellow);
+2.background-color: repeating-linear-gradient(red 30%,blue 60%);

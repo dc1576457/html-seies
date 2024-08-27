@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:gray;
+            
+        }
+        .box{
+            width: 1000px;
+            height:400px;
+            margin: 100px auto;
+            padding: 10px;
+
+        }
+        .a1{
+            width: 500px;
+            height: 400px;
+            float: left;
+            border:2px solid black;
+            box-sizing:border-box;
+            padding-top: 20px;
+            padding-left: 70px;
+             
+             
+        }
+        .h11{
+            text-align: center;
+        }
+        .btn{
+            width: 100px;
+            height:40px;
+            border:2px solid orange;
+            box-sizing:border-box;
+            border-radius:10px;
+        }
+        image{
+            width: 340px;
+            height: 300px;
+            margin-left:5vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="a1">
+            <img src="image/a.png" class="image" width="400px" height="350px"/>
+        </div>
+        <div class="a1">
+            <table>
+                <h1>Add your Feedback</h1>
+                <tr>
+                    <td>Your Name :<br/>
+                    <input type="text" name="name"/></td>
+                    <td>Your Image :<br/>
+                    <input type="file"/></td>
+                </tr>
+                </table>
+                <table>
+                <tr>
+                    <td>You're form :<br/>
+                    <input type="text"/></td>
+                </tr>
+            </table>
+                <table> 
+                <tr>
+                    <td>Your Feedback :<br/>
+                        <textarea style="resize: none;" rows="5" cols="45"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="feedback" class="btn"/></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

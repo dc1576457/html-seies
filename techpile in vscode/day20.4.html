@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:white;
+        }
+        .box{
+            min-height:550px;
+             width:400px;
+             border: 2px solid black;
+             border-radius:10px;
+             background-color:#eee;
+             transition:all 2s;
+             margin-top: 100px;
+             margin-left: 35vw;
+        }
+        .a{
+            width: 400px;
+            height: 150px;
+            padding: 25px;
+            box-sizing:border-box;
+             
+        }
+        .b{
+            width: 100%;
+            height: 100px;
+            color:white;
+            box-sizing: border-box; 
+            padding-left:18px;
+            padding-top: 4px;
+            box-sizing:border-box;
+          
+        }
+        .x{
+            width: 70px;
+            height: 70px;
+            float: left;
+            margin: 10px;
+            border: 2px solid rgb(16, 15, 15);
+            color:black;
+            text-align: center;
+            line-height: 70px;
+            box-sizing:border-box;
+            font-size: 50px;
+            border-radius: 10px;
+            transition: all 2s;
+            background-color:gray;
+            cursor: pointer;
+        }
+        .bg{
+            background-color: orange;
+            color:white;
+        }
+        .b2{
+            width: 100%;
+            height:100% ;
+            padding: 25px ;
+            box-sizing:border-box;
+            background-color: #eee;
+            font-size: 30px;
+            background-color:gray;
+            border-radius:20px;
+        }
+        .x:hover{
+            background-color:orange;
+            transition: all 2s;
+        }
+        .box:hover{
+            background-color:black;
+            transition:all 2s;
+        }
+        ::placeholder{
+            color: #eee;
+            font-size: 40px;
+            
+            box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="a">
+            <textarea class="b2" autofocus placeholder="0" readonly style="resize:none;"></textarea>
+        </div>
+        <div class="b">
+            <div class="x" 
+            onclick="
+            totalValue = totalValue +'1';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >1</div>
+            <div class="x"
+            onclick="
+            totalValue = totalValue +'2';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >2</div>
+            <div class="x"
+            onclick="
+            totalValue = totalValue +'3';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >3</div>
+            <div class="x"
+            onclick="
+            totalValue = totalValue +'4';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >4</div>
+        </div>
+        <div class="b"> 
+            <div class="x"
+            onclick="
+            totalValue = totalValue +'5';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >5</div>
+            <div class="x"
+            onclick="
+            totalValue = totalValue +'6';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >6</div>
+            <div class="x"
+            onclick="
+            totalValue = totalValue +'7';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >7</div>
+            <div class="x"
+            onclick="
+            totalValue = totalValue +'8';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >8</div>
+        </div>
+        <div class="b">
+            <div class="x"
+            onclick="
+            totalValue = totalValue +'9';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >9</div>
+            <div class="x"
+            onclick="
+            totalValue = totalValue +'0';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >0</div>
+            <div class="x"
+            onclick="
+            totalValue = totalValue +'+';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >+</div>
+            <div class="x"
+            onclick="
+            totalValue = totalValue +'-';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >-</div>
+        </div>
+        <div class="b">
+            <div class="x"
+            onclick="
+            totalValue = '';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >Ac</div>
+            <div class="x"
+            onclick="
+            totalValue = totalValue +'/';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >/</div>
+            <div class="x"
+            onclick="
+            totalValue = totalValue +'*';
+            document.querySelector('.b2').value = totalValue; 
+            "
+            >*</div>
+            <div class="x bg"
+            onclick="
+                let totalResult = eval(totalValue);
+                totalValue =totalResult;
+                document.querySelector('.b2').value = totalValue; 
+                "
+            >=</div>
+        </div>
+    </div>
+
+    <script>
+        let totalValue ="";
+        document.querySelector('b2').value =totalValue;
+    </script>
+</body>
+</html>

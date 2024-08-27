@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:white;
+        }
+        .header{
+            width:1200px;
+            min-height: 1000px;
+            background-color:white;
+            margin:0px auto;
+        }
+        .top-menu{
+            height: 70px;
+            width: 1200px;
+        }
+        .logo{
+            width:600px;
+            height: 70px;
+            background-color:white;
+            float: left;
+            padding-left: 20px;
+            box-sizing:border-box;
+        }
+        .top-menu-child{
+            width:200px;
+            height: 80px;
+            float: left;
+            box-sizing:border-box;
+            padding-left: 20px;
+            padding-top: 17px;
+            background-color:white;
+            
+        }
+        .btn-reg{
+            background-color:#16a439;
+            color:white;
+            padding: 15px;
+            text-decoration: none;
+            background-color:white;
+        }
+        .header-child-2{
+            height: 45px;
+            width:1200px;
+            background-color:green;
+        }
+        .slider{
+            min-height: 450px;
+            width: 1200px;
+            background-image:url(a.avif);
+            background-size: cover;
+        }
+        .s1{
+            box-shadow: 0px 0px 10px white;
+            width:400px;
+            height: 330px;
+            margin: 25px 75px;
+            float: left;
+            border-radius: 10px;
+            box-sizing:border-box;
+            padding:0px 30px;
+            transition:all 2s;
+        }
+        .btn,.txt, .s1:hover{
+            background-color:rgba(0,0,0,.5);
+            transition:all 2s;
+            box-shadow:0px 0px 10px white;
+        }
+        .intro{
+            width: 1200px;
+            height: 500px;
+            background-color:#a3a3a3;
+            margin-top: -4vh;
+            padding:30px 80px;
+            box-sizing:border-box;
+            
+        }
+        .h-1{
+            text-align: center;
+            font-size: 50px;
+            color:red;
+        }
+        .p-1{
+            text-align: center;
+            font-size: 20px;
+            color:black;
+            text-align: justify;
+        }
+        .Services{
+            width:1200px;
+            height: 230px;
+            background-color:#a3a3a3;
+        }
+        .s{
+            width:300px;
+            height: 280px;
+            float: left;
+            transform: translateX(10vw);
+            margin-top: -8vh;
+          }
+        .contact{
+            width: 1200px;
+            height: 500px;
+            background-color:#a3a3a3;
+            
+        }
+        .cont{
+            width: 1200px;
+            height: 100px;
+            background-color:#a3a3a3;
+            font-size: 50px;
+            text-align: center;
+            color:red;
+            
+        }
+        .ct-1:hover{
+            background-color:rgba(0,0,0,.4);
+            transition: all 2s;
+            color:white;
+            border:10px solid rgba(0,0,0,.4) ;
+        }
+        .conts{
+            width: 1200px;
+            height:400px;
+        }
+        .ct-1{
+            width: 600px;
+            height: 400px;
+            box-sizing:border-box;
+            float: left;
+            padding: 20px;
+            transition: all 2s;
+            background-color:#a3a3a3;
+
+        }
+        .btn-1{
+            width: 240px;
+            height:30px;
+            border-radius:5px;
+            border:none;
+            background-color:transparent;
+            padding-left:15px;
+            box-sizing:border-box;
+            border-bottom:1px solid white;
+        }
+        .btn-2{
+            width:240px;
+            height:30px ;
+            transform: translateY(-13.9vh);
+            margin-left:18vw;
+            border-radius:5px;
+            border:none;
+            background-color:transparent;
+            padding-left:15px;
+            box-sizing:border-box;
+            border-bottom:1px solid white;
+        }
+        .gallery{
+            width: 1200px;
+            height: 500px;
+            background-color:#a3a3a3;
+            transform:translateY(-4vh);
+        }
+        .footer{
+            width: 1200px;
+            height: 500px;
+            background-color:#a3a3a3;
+            transform: translateY(-6vh);
+        }
+         
+        /*Start nav bar*/
+        ul li{
+            list-style: none;
+            display: flex;
+            display: inline-block;
+            margin: 10px 30px;
+            text-decoration: none;
+        }
+        ul{
+            text-align:center;
+            
+        }
+        li a{
+            
+            text-decoration: none;
+            font-size: 20px;
+            color:white;
+            transition:all 2s;
+            
+        }
+        li a:hover{
+            width: 100px;
+            height: 45px;
+            color:orange;
+             
+            transition:all 2s
+        }
+         
+          /*end nav bar*/
+          .inpt{
+            width: 100%;
+            height:30px;
+            margin: 10px auto;
+            margin-top:15px;
+            background-color:transparent;
+            font-size: 15px;
+            box-shadow: 0px 0px 8px rgba(255,255,255,0.5);
+            padding-left:15px ;
+            box-sizing: border-box;
+            border-radius:5px;
+            border:none;
+          }
+          .txt{
+            width: 100%;
+            height: 60px;
+            margin-top: 15px;
+            background-color:transparent;
+            color:white;
+            font-size: 15px;
+            box-shadow: 0px 0px 8px white;
+           padding-left: 15px;
+            box-sizing: border-box;
+            border-radius:5px;
+            border:none;
+            transition: all 2s;
+          }
+          .btn{
+            width: 150px;
+            height:35px;
+            box-shadow: 0px 0px 8px white;
+            margin-top: 15px;
+            background-color:transparent;
+            color:white;
+            font-size: 15px;
+            text-align: center;
+            box-sizing: border-box;
+            border-radius:5px;
+            border:none;
+            transition: all 2s;
+          }
+          ::placeholder{
+            color:white;
+          }
+          .s2{
+            width:500px;
+            height: 350px;
+            background-color:rgba(0,0,0,.2);
+            float:left;
+            padding: 50px;
+            box-sizing:border-box;
+            margin: 25px 75px;
+            font-size: 20px;
+            box-shadow:0px 0px 10px white;
+          }
+          .p-2{
+            word-wrap: wrap;
+            text-align: center;
+            font-size: 20px;
+            color:black;
+            margin-top: 1vh;
+          }
+          .p-3{
+            transform: translateY(-9.5vh);
+            margin-left: 18vw;
+          }
+          h1{
+            margin-top: 2vh;
+            color:red;
+          }
+          .b-1{
+            transform:translateY(-17.8vh);
+            width:93%;
+            height:30px;
+            border-radius:5px;
+            border:none;
+            background-color:transparent;
+            padding-left:15px;
+            box-sizing:border-box;
+            border-bottom:1px solid white;
+          }
+          .p1{
+            transform:translateY(-13vh);
+          }
+          .p2{
+            transform:translateY(-18vh);
+          }
+          .mesage{
+            transform: translateY(-22.5vh);
+            width: 93%;
+            height: 50px;
+            border-radius:5px;
+            background-color:transparent;
+            padding-left:15px;
+            box-sizing:border-box;
+          }
+          .btn1{
+            width:100px;
+            height: 40px;
+            box-shadow:0px 0px 10px solid;
+            box-sizing:border-box;
+            border-radius:10px;
+            transform: translateY(-20vh);
+          }
+          .ct1{
+            padding:0px 80px;
+            box-sizing:border-box;
+          }
+          img{
+            margin-left:0.8vw ;
+            margin-top:1vh;
+          }
+          .f0{
+            width:1200px;
+            height:100px;
+            background-color:#a3a3a3;
+          }
+          .f1{
+            width:250px;
+            height: 350px;
+            float: left;
+            background-color:#a3a3a3;
+            border:2px solid black;
+            box-sizing:border-box;
+            margin-left:35px;
+          }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="top-menu">
+            <div class="logo">
+                <img src="tech.jpeg" height="80px" width="200px"/>
+            </div>
+
+            <div class="top-menu-child">
+               <b> Call Us <br/>
+                +91 7007237006</b>
+            </div>
+            <div class="top-menu-child">
+              <b>  mail Us<br/>
+                Rahuloni@techpile.in</b>
+            </div>
+            <div class="top-menu-child">
+                <br/><a href="" class="btn-reg">&nbsp;&nbsp;&nbsp;&nbsp;Register Now</a>
+            </div>
+        </div>
+        <div class="header-child-2">
+            <ul>
+                <li><a href="" class="o0">Home</a></li>
+                <li><a href="" class="o0">About</a></li>
+                <li><a href="" class="o0">Contact</a></li>
+                <li><a href="" class="o0">Services</a></li>
+                <li><a href="" class="o0">Gallery</a></li>
+                <li><a href="" class="o0">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="slider">
+            <div class="s1">
+                <input type="text" name="name" placeholder="Enter Name.." class="inpt"/><br/>
+                <input type="number" name="mobile" placeholder="Enter molibe number.." class="inpt"/><br/>
+                <input type="email" name="email" placeholder="Enter Email.." class="inpt"/><br/>
+                <textarea placeholder="Mesage" class="txt"></textarea>  <br/>
+                <input type="submit" value="Save" class="btn"/><br/>
+            </div>
+            <div class="s2">
+                <h1>WelCome to Techpile Technology Pvt Ltd.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, nostrum ut perspiciatis consequatur facere, nulla dignissimos nesciunt non aperiam placeat corrupti voluptate quasi amet officiis impedit adipisci quam officia accusamus?</p>
+            </div>
+        </div>
+
+        <div class="Services">
+            <div class="s" style="background-color: green; text-align:center;"> Content Section</div>
+            <div class="s" style="background-color: gray; text-align:center;"> Content Section</div>
+            <div class="s" style="background-color: blue; text-align:center;"> Content Section</div>
+        </div>
+        <div class="intro">
+            <h1 class="h-1">About Us</h1><br/>
+            <hr/>
+            <p class="p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellat iste voluptates dolore soluta consectetur assumenda pariatur nostrum? Consequatur et atque tempora corporis placeat repellat debitis eligendi ipsam facere assumenda!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellat iste voluptates dolore soluta consectetur assumenda pariatur nostrum? Consequatur et atque tempora corporis placeat repellat debitis eligendi ipsam facere assumenda!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellat iste voluptates dolore soluta consectetur assumenda pariatur nostrum? Consequatur et atque tempora corporis placeat repellat debitis eligendi ipsam facere assumenda!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae repellat iste voluptates dolore soluta consectetur assumenda pariatur nostrum? Consequatur et atque tempora corporis placeat repellat debitis eligendi ipsam facere assumenda!
+            </p>
+        </div>
+        <div class="contact">
+            <div class="cont"><b>Contact with Us </b>
+                <br/><p class="p-2">You may conact us by contact number or fill thi form any time you need profesional support or have any question</p>
+            <hr/></div>
+            <div class="conts">
+                <div class="ct-1">
+                    <form>
+                        <h2 >Send Your Message*</h2>
+                    Name :<br/><input type="text" name="name" placeholder="Enter your Name*" class="btn-1"/>  
+                    <p class="p-3">Your Contact :</p><br/><input type="number" name="contact" placeholder="Enter your Contact*" class="btn-2"/><br/>
+                   <p class="p1"> Your Email :</p><br/><input type="email" name="email" placeholder="Enter your Email*" class="b-1"/><br/>
+                   <p class="p2">Your Message :</p> <br/><textarea placeholder="Type Your Message*" class="mesage"></textarea><br/>
+                    <input type="submit" value="Send Mesage"class="btn1"/><br/>
+                </form>
+                </div>
+                <div class="ct-1">
+                    <div class="ct1">
+                    <h2>Contact Info*</h2>
+                    <h3>Office Address :</h3>
+                    <p>Plot No.43 behind H P Petrol Pump,<br/>Tedhi Pulia Rd, Sector 5,<br/> Vikas Nagar Lucknow </p>
+                    <h3>Call Us :</h3>
+                    <p>+91 8112572257, <br/>
+                    +91 8932911043 </p>
+                    <h3>Mail Contact :</h3>
+                    <p>kumarkamaljeet119@gmail.com</p>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="gallery">
+            <hr/>
+            <h1 align="center">Gallery</h1>
+            <hr/>
+        <img src="a.avif" width="280px" height="200px"/>
+        <img src="a1.avif" width="280px" height="200px"/>
+        <img src="a12.png" width="280px" height="200px"/>
+        <img src="a.avif" width="280px" height="200px"/><br/>
+        <img src="a.avif" width="280px" height="200px"/>
+        <img src="a1.avif" width="280px" height="200px"/>
+        <img src="a12.png" width="280px" height="200px"/>
+        <img src="a.avif" width="280px" height="200px"/>
+        </div>
+        <div class="footer">
+            <div class="f0">
+                <h1 align="center">Footer section</h1>
+            </div>
+            <div class="f1">
+                <h1 align="center">Menu section</h1>
+            </div>
+            <div class="f1">
+                <h1 align="center">content section</h1>
+            </div>
+            <div class="f1">
+                <h1 align="center">policy section</h1>
+            </div>
+            <div class="f1">
+                <h1 align="center">course section</h1>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

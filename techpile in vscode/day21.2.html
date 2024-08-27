@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 450px;
+            min-height: 650px;
+            background-color: #eee;
+            border:2px solid black;
+            padding: 20px;
+            box-sizing:border-box;
+            transition: all 2s;
+        }
+        .a1{
+            width: 400px;
+            height:150px;
+            background-color:#eee;
+            border:2px solid black;
+            padding: 30px;
+            box-sizing:border-box;
+            border-radius:10px;
+        }
+        .a2-1{
+            width: 100px;
+            height: 64.28px;
+            background-color:white;
+            border:2px solid black;
+            float: left;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 30px;
+            line-height: 64.28px;
+            border-radius: 10px;
+            transition: all 2s;
+        }
+        .txt{
+            width: 100%;
+            height: 100%;
+            background-color:#eee;
+            transition:all 2s;
+            font-size: 30px;
+            text-align: right;
+            padding-right: 20px;
+            box-sizing:border-box;
+            border-radius:10px;
+        }
+        .a2-1:hover{
+            background-color:orange;
+            transition: all 2s;
+        }
+        .parent:hover{
+            background-color:black;
+            transition: all 2s;
+        }
+        .txt:hover{
+            background-color:black;
+            color:white;
+            transition:all 2s ;
+        }
+        .bg{
+            background-color:orange;
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="a1">
+            <input type="text" class="txt" placeholder="0"></>
+        </div>
+        <div class="a2">    
+            <div class="a2-1">MC</div>
+            <div class="a2-1">MR</div>
+            <div class="a2-1">M-</div>
+            <div class="a2-1">M+</div>
+        </div>
+        <div class="a2">
+            <div class="a2-1"
+            onclick="
+            currentValue = '';
+            document.querySelector('.txt').value = currentValue;"
+            >AC</div>
+            <div class="a2-1">√x</div>
+
+
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue.toString().slice(0,-1);
+            document.querySelector('.txt').value = currentValue;"
+            >DE</div>
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '+';
+            document.querySelector('.txt').value = currentValue;"
+            >+</div>
+        </div>
+        <div class="a2">
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '7';
+            document.querySelector('.txt').value = currentValue;"
+            >7</div>
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '8';
+            document.querySelector('.txt').value = currentValue;"
+            >8</div>
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '9';
+            document.querySelector('.txt').value = currentValue;"
+            >9</div>
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '*';
+            document.querySelector('.txt').value = currentValue;"
+            >x</div>
+        </div>
+        <div class="a2">
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '4';
+            document.querySelector('.txt').value = currentValue;"
+            >4</div>
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '5';
+            document.querySelector('.txt').value = currentValue;"
+            >5</div>
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '6';
+            document.querySelector('.txt').value = currentValue;"
+            >6</div>
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '-';
+            document.querySelector('.txt').value = currentValue;"
+            >-</div>
+        </div>
+        <div class="a2">
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '1';
+            document.querySelector('.txt').value = currentValue;"
+            >1</div>
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '2';
+            document.querySelector('.txt').value = currentValue;"
+            >2</div>
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '3';
+            document.querySelector('.txt').value = currentValue;"
+            >3</div>
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '+';
+            document.querySelector('.txt').value = currentValue;"
+            >+</div>
+        </div>
+        <div class="a2">
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '0';
+            document.querySelector('.txt').value = currentValue;"
+            >0</div>
+            <div class="a2-1"
+            onclick="
+            currentValue = currentValue + '.';
+            document.querySelector('.txt').value = currentValue;"
+            >.</div>
+            <div class="a2-1" onclick="
+            currentValue = currentValue + '%';
+            document.querySelector('.txt').value = currentValue;"
+            >%</div>
+            <div class="a2-1 bg"
+            onclick="
+            let result = eval(currentValue);
+            document.querySelector('.txt').value = result;"
+            >=</div>
+        </div>
+        <div class="a2">
+            <div class="a2-1">ᴫ</div>
+            <div class="a2-1">x<sup>2</sup></div>
+            <div class="a2-1">R2</div>
+            <div class="a2-1">R0</div>
+        </div>
+    </div>
+
+    <script>
+        let currentValue='';
+        document.querySelector('.txt').value = currentValue;
+    </script>
+</body>
+</html>
