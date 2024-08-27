@@ -1,0 +1,64 @@
+<html>
+<head>
+<hr/>
+<h1>Web Form</h1>
+<hr/>
+</head>
+<body>
+<form method ="post" autocomplete="off" enctype="multipart/form-data">
+userid:<br/>
+<input type="text" value="shorts.e3f" readonly/><br/>
+Name: <input type="text" autofocus required><br/>
+Gender: <input type="radio"  name="a"/>Male
+<input type="radio" name="a"/>Female<br/>
+Qualification: <input type="checkbox"/>9<sup>th</sup>
+<input type="checkbox"/>10<sup>th</sup>
+<input type="checkbox"/>12<sup>th</sup>
+<input type="checkbox"/>B.tech
+<input type="checkbox"/>M.tech<br/>
+Date of birth: <input type="date"/><br/>
+DateTime: <input type="datetime-local"/><br/>
+Time: <input type="time"/><br/>
+Color: <input type="color"/><br/>
+FileUploads: <input type="file"/><br/>
+Password : <input type="password"/>
+<hr/>
+<h1>Dropdownlist || combo box</h1>
+<hr/>
+<select>
+<option>--Select Course--</option>
+<option selected>Summer Training</option>
+<option>Winter Training</option>
+<option>Job Oriented Training</option>
+<option disabled>Industrial Training</option>
+</select>
+<br/>
+<hr/>
+<h1>dropdwonlist || optgroup</h1>
+<hr/>
+<br/>
+<fieldset>
+<legend> Dropdown list</legend>
+<select>
+<optgroup  label="Font-End language">
+<option>--Select Language--</option>
+ <option> Hmlt</option>
+<option> CSS</option>
+<option> Javscript</option>
+</optgroup>
+ <optgroup label="Back-End language" disabled>
+<option> Java</option>
+<option> Python</option>
+<option>PHP</option>
+</optgroup>
+</select>
+</fieldset><br/>
+
+Message: <textarea style="resize:none;" rows="2" col="5"></textarea><br/>
+<br/>
+<input type="Submit" value="submit button"/>
+<input type="button" value="dummy button"/>
+<input type="reset" value="reset button"/> 
+</form>
+</body>
+</html>
